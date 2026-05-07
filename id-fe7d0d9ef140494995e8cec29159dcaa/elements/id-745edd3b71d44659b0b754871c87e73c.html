@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>MCP Server</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.4.1.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>MCP Server</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-ApplicationComponent"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-ApplicationComponent" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+                    <!-- Analysis -->
+                    	<li role="presentation"><a href="#analysis" aria-controls="analysis" role="tab" data-toggle="tab" class="i18n-analysis"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="used-in-views-id-cc54199acb86449b950e73a2430625f8">
+																	<td><a href="../views/id-cc54199acb86449b950e73a2430625f8.html" target="view" title="DataFlowView"> DataFlowView </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+									<tr>
+											<td><a href="../elements/id-73101b83e9b0442180155b36377aaff0.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AccessRelationship" /></td>
+											<td><a href="../elements/id-745edd3b71d44659b0b754871c87e73c.html" target="element"> MCP Server</a></td>
+											<td><a href="../elements/id-edd24488aea84966843b3fa5342f7cc0.html" target="element"> Resources</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-a3477801268d4e51b0464fa7e26e206a.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AssignmentRelationship" /></td>
+											<td><a href="../elements/id-745edd3b71d44659b0b754871c87e73c.html" target="element"> MCP Server</a></td>
+											<td><a href="../elements/id-13e023b6b5ac4c83b9100cff45649b7b.html" target="element"> Tool</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-9ad197cc1f8048b1baf58f604d8d3d31.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-745edd3b71d44659b0b754871c87e73c.html" target="element"> MCP Server</a></td>
+											<td><a href="../elements/id-92c9e843e2034ed8b32389cdd77ac638.html" target="element"> Prompts</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-a8549e1f89f14bd295ad93a794711470.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-745edd3b71d44659b0b754871c87e73c.html" target="element"> MCP Server</a></td>
+											<td><a href="../elements/id-e147b9d66f6946cd95f7f864fab8cd80.html" target="element"> AI Chat Interface</a></td>
+										</tr>
+									<tr>
+											<td><a href="../elements/id-cc2a3944237c45938e0db589e7f23bd9.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-e147b9d66f6946cd95f7f864fab8cd80.html" target="element"> AI Chat Interface</a></td>
+											<td><a href="../elements/id-745edd3b71d44659b0b754871c87e73c.html" target="element"> MCP Server</a></td>
+										</tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

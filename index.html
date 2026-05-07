@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html class="model" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>AIReadyStatistics</title>
+
+	<!-- JQUERY / UI / LAYOUT -->
+	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui-layout/jquery.layout-1.4.4.js"></script>
+	<link type="text/css" rel="stylesheet" href="lib/jquery-ui-layout/layout-default-1.4.4.css">
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="lib/bootstrap/js/bootstrap-3.4.1.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="css/model.css">
+	<link type="text/css" rel="stylesheet" href="css/i18n.css">
+	<script type="text/javascript" src="js/model.js"></script>
+	<script type="text/javascript" src="js/url-polyfill.min.js"></script>
+</head>
+
+<body>
+	<!-- "ui-layout-north" class set (topbar) -->
+	<div class="ui-layout-north">
+		<nav class="navbar navbar-inverse">
+			<div class="navbar-header">
+				<span class="navbar-brand">AIReadyStatisticsReferenceArchitecture</span>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#myModal" data-toggle="modal" class="go"><span class="i18n-about"></span></a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<iframe name="view" class="ui-layout-center" src="id-fe7d0d9ef140494995e8cec29159dcaa/elements/model.html" scrolling="no"></iframe>
+
+	<div class="ui-layout-west">
+		<iframe name="element" class="ui-layout-south" src="elements/empty-element.html"  scrolling="no"></iframe>
+		<div class="ui-layout-center">
+			<div class="panel panel-default root-panel">
+				<div class="panel-heading root-panel-heading">
+					<b><span class="i18n-modeltree"></span></b>
+				</div>
+				<div class="panel-body root-panel-body">
+					<b><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/model.html" target="view">AIReadyStatisticsReferenceArchitecture</a></b>
+					<ul class="tree">
+					<!-- START OF STRINGTEMPLATE CODE -->
+						<li class="tree-folder sorted"><span class="i18n-model_content"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+							<ul>
+                                <li class="tree-folder "><span class="i18n-strategy"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+                                    <ul>
+                                    				<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e1850f31bd804e9287f55eb17fd0aac9.html" target="element"> Data Source Connection </a></li>
+                                    				<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-de7a68cc6e4644fe8409903b2369a63d.html" target="element"> Metadata Harvesting </a></li>
+                                    				<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-950ed34752544aebb03164605838de97.html" target="element"> Metadata Enrichment and Curation </a></li>
+                                    				<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a22b1b8de6c149ecb8ab96bd1606fbae.html" target="element"> Metadata Publishing </a></li>
+                                    				<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6254e3f6ac894661ae833751b4aabb2f.html" target="element"> Metadata Review and Approval </a></li>
+                                    				<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-db5cd0b78b1241bcbcf8fc8733055a0d.html" target="element"> Data Classification and Tagging </a></li>
+                                    				<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0b0adcd3127647f5b9b76c5c781604e0.html" target="element"> Data Acquisition </a></li>
+
+                                    </ul>
+                                </li>
+								<li class="tree-folder "><span class="i18n-business_layer"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+									<ul>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-78da5ae92d6448aca00d151036aa8413.html" target="element"> Statistical Artefact </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-fa26d193821e4a1e8e79a6ff0b2b9fbe.html" target="element"> Data Structure Definition </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e8d46a29694f4fdcb3d6d18e800ce778.html" target="element"> Data Flow Definition </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-92ad0731c34b4aad8617ad9d58523b93.html" target="element"> Dimensions/ Keys </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0216473d955c4d3c87c1634fea4bcff9.html" target="element"> Attributes/ Metadata </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-ed22c1352c2f4fe3964009e7e36e354d.html" target="element"> PrimaryMeasure (the actual value) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-95b7168ec12749e2a9f5714f49138d66.html" target="element"> CodeList </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-32a0947ffaf541f8a1915b8e4f1be9dd.html" target="element"> User </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e83d9e0d845c4e62b02c31117846241c.html" target="element"> Data Collection </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e88723da30d044e1b933268e46e8a5cf.html" target="element"> Data Editing </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1545e110f1a748f4850d04b3ef69ad0f.html" target="element"> Data Processing  </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-4974738039f34b9a8f7f6ad70b5fec8e.html" target="element"> Data Validation </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-11e193926a6f41fbbb8e0410d1d58a03.html" target="element"> Metadata Harvesting </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-32f5c874c42e475d9f2fdf6d6f0661fe.html" target="element"> Data Classification and Tagging </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-14596897a0084a758249739594399468.html" target="element"> User </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-2ca95cd61f2b436bb5b5334cd7fb61d7.html" target="element"> Data Retrieval </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8fa544ca4c434c0f88a9840830888b01.html" target="element"> Statistical Organization </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e8fadd5661db4b6388e9abf90b69edcc.html" target="element"> Publisher </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5572b87eb5cc40c9a47481402ebe64c0.html" target="element"> Data Dissemination </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-fbc51bf8c3d24b7c9b10cb03857b22dc.html" target="element"> Statistical Data </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-24042d8a5667453f98ffc41a4936d0af.html" target="element"> Data Diss </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c8745688ee184cc8b1badff85cf5ee40.html" target="element"> Consumer </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-2dfa5f29f71f48c6b361ec452b4b8980.html" target="element"> Data Search </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5b54e8a12cf84a2c94247d99d8a5887f.html" target="element"> Human User </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1077c2103ecf4f66829e1017fafbc069.html" target="element"> AI User </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c65ccccc0df240fa80266dd0594e3766.html" target="element"> Data Observability  </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c58053b4c10146d088efa2981f881703.html" target="element"> Drift Detection </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-bc946450acf049818f851aa41d30cae2.html" target="element"> Metadata Enrichment </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-9e4b474e878547ecbfd9227b20972a43.html" target="element"> Data Steward </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e049b10fa8b84d87be031c13210b6033.html" target="element"> Statistical Expert </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-41274e98435949909d68fa456583f0cc.html" target="element"> Data Owner </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-ccdcc05df7384b35a74ede45f570627a.html" target="element"> Subject Matter Teams </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-99e53831e89a4fc09a4482afed0becdb.html" target="element"> Data Standards Team </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c44ad228149a4e528fa792efc48783a2.html" target="element"> Chief Data Officer </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-4efddfd01c674f71b7911984f9a3cd34.html" target="element"> Data Catalog Administrator </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-ee26421e5ae84b6886d266139ffa346b.html" target="element"> Data Catalog Administrator (copy) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e36d2b57b3684a7ca4d2fdd01059f5e8.html" target="element"> Statistical Expert (copy) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-98aa5315b45848f9a259ba4ee1298699.html" target="element"> Statistical Expert (copy) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f7c0ddd4f8c641118ff94001c4a6d7d7.html" target="element"> Start Scheduled Data Sources Scanning </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a56a43d423b844afbee9e62c5720a36d.html" target="element"> Metadata Security Policy </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-abe74fcab2f44844b65aaa9c06b7033f.html" target="element"> Connect to Data Sources </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8beffeceb3dc40658a9bcca05c5ede17.html" target="element"> Technical Metadata Extraction </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-216766db5974499c8f7d4f7921922d5d.html" target="element"> Basic Technical Metadata </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-bf6b10248a3d467b84d1228eee234932.html" target="element"> List of Data Sources </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c8b22c95811b4c77a7f9e03224b02f71.html" target="element"> Apply Sensitivity Labels </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d7197e9626d84e189434bf4ffd6bbcc1.html" target="element"> Classification and Tagging </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b67de02facd54b4f95246702bcbd78e3.html" target="element"> Knowledge Hub Lookup </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6875a7027d45458bb838393c0e9ede9e.html" target="element"> Enrich Metadata  </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e375d3afe6764e05bcacaada0022c8b7.html" target="element"> Existing Data Product Information </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b210095f9c934e83ae51dc8522ddb6ed.html" target="element"> Review and Approve Data Catalog Entry </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-19581e203ab847bca500fb54b91ccba4.html" target="element"> Catalog Entry Completed  </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-2b0d034ddaea471a9f89861bd999506a.html" target="element"> Continuous Metadata Evaluation and Refinement </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-069b434851824662b123b6e126f8f88c.html" target="element"> Curate Metadata </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-4eb39e4a02ca4e339bd5ca92384feda6.html" target="element"> Pre-defined Classification Template </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-33e9e23598ea480caaafa72cedbfd52a.html" target="element"> Pre-defined Tags Template per Asset Type </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b5bbbcd9332b49c9bca014fef83bb19f.html" target="element"> Metadata Quality Monitiring </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a6b0f2c6c0474c698c68559d9e5ffc65.html" target="element"> Derived Dataset </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c2b1ddf8303943e283cc23b351a7a65d.html" target="element"> Information Management Policy </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-623be30f0a344f9aa824497b9e274d95.html" target="element"> Create Derived Datasets </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-71c738b6c2544e79ab6c5f552ab9c74c.html" target="element"> Manage Operations and Subscriptions </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-47af9c421b3446099beec686c9fae0aa.html" target="element"> Configure Data Sources Connections </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-66eca132d50c47319d69eaab44361ede.html" target="element"> End User </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8c849edd6dea4de0b004135f0e396132.html" target="element"> International Organizations </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-fe426d237e5f4da9b77d7a8629dae9be.html" target="element"> Business Units </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-50ddc5ff2e2f4ff1a8d679f53a1c7c89.html" target="element"> Dissemination Specialists </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a95d27de96f846079f07f082d3798330.html" target="element"> Discover Data Asset </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-9490d32e1fd1419e9077c65b6957a567.html" target="element"> Natural Language Query (NLQ) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8335ff31fd364cd5ab6f9ae015b6dc8a.html" target="element"> Statistical Data and Metadata </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-7b1c4ccb0f9e470d9984310d6a301d9d.html" target="element"> Semantic Metadata </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-2d0be44310524ec891a8a8f092121668.html" target="element"> SDMX, PX </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f4b269a5216645d7b12d6b72dd527b2d.html" target="element"> Natural Language to Structured Query </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-433cffa018fc47e79dfe8a6130fe08be.html" target="element"> Statistical Data Representation Formats - SDMX, PX, PDF </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-45959aa9d61441adb836c4a3b61d1f2c.html" target="element"> Natural Language Query (NLQ) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6d1a46dfe8314b2a8579bca389538084.html" target="element"> Generic Statistical Information Model (GSIM) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-41204ee38177454baaf28d39efe29446.html" target="element"> Semantic Mapping </a></li>
+
+									</ul>
+								</li>
+								<li class="tree-folder "><span class="i18n-application_layer"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+									<ul>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-ec805e2b14d142cb9b93a88916d55981.html" target="element"> Statistical MCP Server </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c6f0b545bb484467b4e13a7bf66be144.html" target="element"> MCP Tools </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-913573678daf42ecae371fb30e1c7892.html" target="element"> MCP Resources/ Metadata </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-195ceed3ab8943c4b6c7bffd528629f3.html" target="element"> Statistical Data Source SDMX </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e34718a37361437d815169020ef75c70.html" target="element"> Parametrized Query Execution </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a381e7ca12fa456581220eccabcadb29.html" target="element"> MCP Prompts Endpoint </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-132c406b2f3d43408e80a49473d04b42.html" target="element"> Discovery Service </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b7a7695395594c2cb75a1eed02500df4.html" target="element"> Prompt Service </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e7d9742af5684c7994f23ea3a09c098c.html" target="element"> Statistical MCP Host (local) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-fc264b4faab047068a8ab821b96d3833.html" target="element"> Statistical MCP Client </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-595fda69d2174d5c95e7bee70333ee9d.html" target="element"> Statistical AI Agent </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-ae1bbd60d9214185abad5ff121f9f322.html" target="element"> MCP Resources Endpoint </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-bd9f7d03d85d47fcaae54f5ee58e478a.html" target="element"> MCP Tools Endpoint  </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-7323d2c64c4446559e8ca84ee4f7f777.html" target="element"> Statistical Validation Service </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-34ede2f01f124513b6b06d76af0f18ad.html" target="element"> Statistical Engine </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e0416069146f41d788cd6b7212fde5f4.html" target="element"> MCP Context </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c2f78cdef8d743f899018474a420c1b8.html" target="element"> Context Resolver Service </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-840f1b7ce7f84ff38739a50956e8e94f.html" target="element"> MCP Host (local) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f036c84e45914b59bb9f4627332fb751.html" target="element"> MCP Client 1 </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-88103239c5b94742ac17751254b8aa1e.html" target="element"> MCP Client 2 </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a6665c914e4a4a0f88780c385cd7daf4.html" target="element"> MCP Client 3 </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a69bf7fe22124c028f5f9abbefd8b9c2.html" target="element"> MCP Client 4 </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-914a21fd3637468e97b09e2e21457a12.html" target="element"> AI Application (local) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1d15adf67bb64d9aa9baff3dd24553c9.html" target="element"> MCP Server A (Local) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a22ca4284fe8401dabf89a9fcc91e405.html" target="element"> MCP Server B (Local) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-2fb2fb3ab32f43ed9af38c4539ef43d4.html" target="element"> MCP Server C (Remote) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f699e0c783ce42b782bad21b1062a794.html" target="element"> Files / Code repository </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-4b4817ff15b1484e876b5ecde1b94433.html" target="element"> Database (local) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-22e80654814c4bea91ed812316393a0a.html" target="element"> Database (remote) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-9744468e6de34e30b196eee70825581e.html" target="element"> APIs </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a1df4f3357d84f47ab9924b2f3cb37fb.html" target="element"> MCP Context </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a2dfafee8aef4a95a408988eaf52bd25.html" target="element"> Response to User Query </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e11f6933ff264c759d5d0cf1c6dfddeb.html" target="element"> Response to User Query </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-3b8cad4b7fbd423ea846e0504e4c5595.html" target="element"> Statistical Engine (Python) ? </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-eae3678844c549dcbeb6519caaea9b9a.html" target="element"> Context Resolver </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-7021e7804d044c4fbbf3e35fbfae8652.html" target="element"> AI Agent / Stat LLM (remote) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-430aa164cf694ea3ad55ba9984818355.html" target="element"> LLM </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-eb9025f03a644937861968b3244845d1.html" target="element"> MCP Host </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-31599dc797414402887200dc3de1f8a3.html" target="element"> MCP Client </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f8efb42375bd4f5c9947166c6907e54a.html" target="element"> AI Agent </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8f7a3762f9db4b4e9a074325a04bfdbb.html" target="element"> MCP Server </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d773492f58e54f4ea9f50b255b7acf1e.html" target="element"> AI Agent </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-91875bc5b4264f4d92605ad4cd3df7af.html" target="element"> Data </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e147b9d66f6946cd95f7f864fab8cd80.html" target="element"> AI Chat Interface </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-ffbad7aae47444b091da81bbf2cbcb18.html" target="element"> MCP Client </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1f1c0775864246b29d5b1b2d087e6378.html" target="element"> LLM </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-745edd3b71d44659b0b754871c87e73c.html" target="element"> MCP Server </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-edd24488aea84966843b3fa5342f7cc0.html" target="element"> Resources </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-13e023b6b5ac4c83b9100cff45649b7b.html" target="element"> Tool </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-92c9e843e2034ed8b32389cdd77ac638.html" target="element"> Prompts </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e9ccdf203a1f4d199b4226fea2a50a30.html" target="element"> Retrieve List of Tools/Resources </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6e7c7910bb65438f94df0690b93f81e3.html" target="element"> Retrieve List of Tools/Resources </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-368775545c5142308a720647c1dcbf67.html" target="element"> Select Tool/Resource </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b8b642226ca84e2391dd365be2e0f52f.html" target="element"> Interpret User  Intent </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d19357d3d1f44abbb42f91e02afa286e.html" target="element"> User Asks Question </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0f4c394224c54885b334a0303c92b0c1.html" target="element"> AI Agent needs information </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-4a1429a6fbdd4dde9ac44fa0a5345db1.html" target="element"> Map Parameters </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-2c2a5b38cb0045c98e128862a52b18a8.html" target="element"> Invoke Selected Tool </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-54c0bcd446e64aacbfd76f1e649e3dff.html" target="element"> Question </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-ed50942b37e848e1b93f8c015fca24ff.html" target="element"> Answer </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c7cba57ec36f4f98a398af0dfd259e89.html" target="element"> Get Info from Data Source </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-75d6661310b34e118774bce51a5cad5b.html" target="element"> Get Answer </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e291cf0428854994ad793cd5d8a745fa.html" target="element"> Knowledge Database </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-823a41e6c98b46d8b2223212a4c175fa.html" target="element"> Prompt Library </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-54523180bcb541d7815bd2acd423a3ac.html" target="element"> Control Vocabularies </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-29fe7fb477dc4ee2b4ef8abba03d2df7.html" target="element"> Vector Databases </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-83f56f020ab845a698e091253a68820a.html" target="element"> Embedding Model </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5648ac02865442e6886d66cfd42a38cd.html" target="element"> Metadata </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-bd34ff54c90c42a19d0c5263b332c14b.html" target="element"> Data Catalogue </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0dbe4b37218c4dcaa940b72d18197302.html" target="element"> Data </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-bbdf26d4fc6240c78ca6922c916f9950.html" target="element"> Data Catalogue </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-047cbe4579a94cf19a883609dbdce9ad.html" target="element"> Confidentiality Classification Tool </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-01b70acdc6e841a6b8cd000710bd5f1f.html" target="element"> Knowledge Hub </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b7b1a50d846a4ec4a032c7934583d7ff.html" target="element"> Centralized Data Catalog </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f9aad3842b734d809626d2c3fd790260.html" target="element"> Data Owner Interface </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-9a27a0adf9aa4c0bbfb63999f2396528.html" target="element"> Data Catalog Management and Configuration </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-11edf4321d624329968fd7144a028a68.html" target="element"> Data Connectors / APIs </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a5ceb10faa984906acf522e2db0ae684.html" target="element"> Data Catalog Entry &lt;&lt;STAT-DCAT&gt;&gt; &lt;&lt;GeoDCAT&gt;&gt; &lt;&lt;Apache Atlas&gt;&gt; </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-4c07846440df4b709516bc4d89a1f728.html" target="element"> End User Interface </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-3e919bbd56ed49129d89ac09f49c9ebe.html" target="element"> Knowledge Graph </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d78544b719404f4aa8e56a62dd46fa9d.html" target="element"> Retrieval Augmented Generation (RAG) </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-dce9b7f0584c48f486ed336dd387bb95.html" target="element"> MCP Client </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8235602158174130958f4bc92a00f185.html" target="element"> MCP Server </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c00faf8fb0fb441389746d1a456a1c52.html" target="element"> Data Catalogue </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-7550f910974345a7b3383fde16529b23.html" target="element"> Text-to-SQL Interfaces </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-22525c66b3974826beef22244bcfe2c8.html" target="element"> Prompt Library </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a381ad51a49c43ed9f197fb3fe08451a.html" target="element"> Prompt Library </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-09b7dd5f82a24c7aa765e66b4be62502.html" target="element"> Read Metadata </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-4eecab7dff5e48a78ae124b2104432bb.html" target="element"> MCP Tools List </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-9362b89c90ec4e6db577e6cb4e7c4dad.html" target="element"> MCP Resources List </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f0221c606bc543e08dece126eb194e3b.html" target="element"> Schema Generation and Mapping </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-3e82ef8925494c44b68c6433e272ce2d.html" target="element"> MCP Server </a></li>
+
+									</ul>
+								</li>
+								<li class="tree-folder "><span class="i18n-technology_layer"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+									<ul>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1c091032ed854aefbcebd27f3bc28b89.html" target="element"> Personal Computer </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-272a8eb3866f4562b0e1e8f978e9fba4.html" target="element"> Cloud Cluster </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-17c262c58b804a2ca41e36eb87b0bffc.html" target="element"> MCP Server </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-bf37442fb628421b96c3b77469e0e2a8.html" target="element"> Data Storage </a></li>
+
+									</ul>
+								</li>
+								<li class="tree-folder "><span class="i18n-motivation"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+									<ul>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-4e61a3aad57e4fdf9e284d4f583fa2cc.html" target="element"> Public Trust </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d0be4c7eda1741e080c4571fb74a2c1a.html" target="element"> Accuracy </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8bbd0b13d8f04017b379abe6151a9c7a.html" target="element"> Data asset is securely discoverable by end users </a></li>
+
+									</ul>
+								</li>
+								<li class="tree-folder "><span class="i18n-implementation"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+									<ul>
+									</ul>
+								</li>
+								<li class="tree-folder "><span class="i18n-connectors"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+									<ul>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-ef839804e88d4bfcac28482f1fd7b79e.html" target="element"> SDM Repository - Source of Truth </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-7f1379d44329487db0bffe7523856968.html" target="element"> Application Architecture </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-3c7c7217a1854726a5d4c2ff4059833b.html" target="element"> Remote or Local Data Sources and Tools </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a92ba029b62748abafd03f059c6198e2.html" target="element"> External Services </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6f91735a00ff44479f3798e3cdba4f2d.html" target="element"> Orchestration Services </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-3716e06a2648488a87804e17668bb8f0.html" target="element"> Cloud-based LLM </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f4ec802960d04d29ac67e12008bf64e6.html" target="element"> Business Architecture </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-dfa23320e6e84e8ea31ec838f7a6f628.html" target="element"> Data Architecture </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-589a19e026904acf8b54004e0925c519.html" target="element"> Application Architecture </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-2efa8cf361664bcda3c3d8d7dc9c0cbb.html" target="element"> Technology Architecture </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-017c8e85895d496abe754d06a4cd42c5.html" target="element"> AI-Actionable Statistical Data </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-4bd580017a9f482082b62850a0f548fd.html" target="element"> Statistical Data Production Chain </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e235e298bc06425b8f1663342ab46aa4.html" target="element"> API calls </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c7611e8250f54ab1918302f1ea541206.html" target="element"> Statistics Grounding Workflow </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a0ea4e15d2d540dca7e066ca0592e04d.html" target="element"> Statistical Process </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-714515ae554c422dbb9ee06c4182d66c.html" target="element"> Data Architecture </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5d07779eac21463288a2ea31921949ad.html" target="element"> Application Architecture </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0739235b375144a59f7be70f62d83293.html" target="element"> Key Business Roles </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-56d05a78835e42a5b6fbc14e7cb45925.html" target="element"> Applications  </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-88fbab675ea349b99f820c5856eac86b.html" target="element"> Data Cataloguing - Value Stream </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-7bd6379cc60243e1b4ab98ceb2604242.html" target="element"> Data Cataloguing - Business Processes </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d5657dc824cd4beb91cc00ca8b7f11ab.html" target="element"> Governance </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-3649288a35c54917b030ed7dfff23504.html" target="element"> MCP Server </a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-46f397b9fd97498e856d11aaa953e2ca.html" target="element"> MCP Client </a></li>
+
+									</ul>
+								</li>
+								<li class="tree-folder "><span class="i18n-relations"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+									<ul>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1323080626824656aee38ce950635d11.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(SDM Repository - Source of Truth - Statistical Artefact) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b53c0916e9e64fe3860524b8d67a63bc.html" target="element">
+															<span class="i18n-elementtype-SpecializationRelationship"></span>
+														(Data Structure Definition - Statistical Artefact) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8f0a5eb43ab7423cb96e2dc04aafb34d.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Data Flow Definition - Data Structure Definition) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d0b8d17ea1f84bccb17052cfd62d83ab.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(SDM Repository - Source of Truth - Data Flow Definition) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-bc7af1fe83834421b26f2ad3ec7679ee.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(SDM Repository - Source of Truth - PrimaryMeasure (the actual value)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-36d1bb9136624ff6bcf5790ec6544c5d.html" target="element">
+															<span class="i18n-elementtype-SpecializationRelationship"></span>
+														(Data Flow Definition - Statistical Artefact) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-38152005d7744d1d98371c17a0fdd446.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(SDM Repository - Source of Truth - Dimensions/ Keys) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e34b2e1efdd146b48fc57a298c40e420.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(SDM Repository - Source of Truth - CodeList) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f6e814c478704247b5832e52c2c5c74b.html" target="element">
+															<span class="i18n-elementtype-SpecializationRelationship"></span>
+														(Attributes/ Metadata - CodeList) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c003fef63f5c470bb187c13765fa43c2.html" target="element">
+															<span class="i18n-elementtype-SpecializationRelationship"></span>
+														(Dimensions/ Keys - CodeList) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-3e3253fa7bbf4704ab41f0a95a9faa68.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Data Structure Definition - Dimensions/ Keys) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1049162e591045c98a74a869efb13ba7.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(SDM Repository - Source of Truth - Data Structure Definition) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-940ecbc359744bcebb717ed9bd78519a.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(SDM Repository - Source of Truth - Attributes/ Metadata) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-46cadb650edf4774a10262760d7a52d1.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Data Structure Definition - PrimaryMeasure (the actual value)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-7a80be8afed14066acdfd42acdfe65cc.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Data Structure Definition - Attributes/ Metadata) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8a8957b77b5748448c9ab4f61767253e.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Discovery Service) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c6f4e7c24b824233ad98814025b8ec8e.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - MCP Tools Endpoint ) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f2487f0943ed4b9a9a84d96e8b4b34b2.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - MCP Resources Endpoint) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-bc5c0bcc362645d7b46972602b0d962e.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Context Resolver Service) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5cf274b9068c41f7b8bf6b15a9129c33.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - MCP Context) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-54d2b4d79c0d496e9cdfb6c5c9a265ec.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Statistical MCP Server) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-918eb65a23d44bb88130ed07bee16ed7.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical MCP Host (local) - Statistical AI Agent) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-526e60b848d845fcb9d29db42c4375b0.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Statistical MCP Server - MCP Resources/ Metadata) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-12a706dcc0f540189c8e5d76b510ba39.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Statistical Engine) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-bbbe8b3177244fac9d5eca64fab56ae0.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Application Architecture - MCP Prompts Endpoint) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5c856c1702e24955b34b4d0f2654526e.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Prompt Service) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-7ccd7b31069f4da399af9b71738642a8.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Application Architecture - Statistical Data Source SDMX) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-98eac930cdf543c0a1efa11c4e17ed27.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Parametrized Query Execution) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5502d05af90e42888568c670249b84f0.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Statistical MCP Server - MCP Tools) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-677b670887c74d0eb229e36ac62b4fc3.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Statistical Validation Service) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6b269814c6cf414b86681a3f07715cf3.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Statistical MCP Host (local) - Statistical MCP Client) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0785cb5afaab4ad6bc18f2e5d39ad290.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Statistical MCP Host (local)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-ecb9da99f41144f29b7674ed550fe4af.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(MCP Client 1 - MCP Server A (Local)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6279be9d021e44da9cf930ee6babdfd2.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(MCP Server C (Remote) - MCP Client 4) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-797d152b4df9488387900354baf859f6.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Remote or Local Data Sources and Tools - MCP Server A (Local)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0e1540fd479e422492fb66d6f4594f53.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(MCP Server A (Local) - Files / Code repository) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0e99e17a64084c1baf1c1c65f637886b.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Remote or Local Data Sources and Tools - MCP Server C (Remote)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f8d246400dda4641802811624a000052.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(MCP Client 2 - MCP Server B (Local)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f7f8b7f318574d0c8b25373c84bc1128.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(AI Agent / Stat LLM (remote) - MCP Client 4) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-9b7bd53d9a804dbab99941238e6134c0.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(MCP Host (local) - MCP Client 1) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-bee633d3c02f42e38ef0917c8a55a2a6.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(AI Application (local) - MCP Host (local)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-bbb7b9227267451a8178a3d160e8a643.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Remote or Local Data Sources and Tools - Database (remote)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-71cc033ea8054620be79d245b0505b32.html" target="element">
+															<span class="i18n-elementtype-AssociationRelationship"></span>
+														(Response to User Query - ) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-237e8fb38f05483d91a70c39077bab26.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Remote or Local Data Sources and Tools - Database (local)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b624a78dae2947e68987b774b33dbab4.html" target="element">
+															<span class="i18n-elementtype-AssociationRelationship"></span>
+														(MCP Context - ) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-9155f14ae51744feb675a81de615fbad.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(AI Application (local) - Response to User Query) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0bf42e897f5444b1add4762ccd70b38d.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(MCP Client 4 - MCP Server C (Remote)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c97e059930f043b2bb6630b96a15f555.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Remote or Local Data Sources and Tools - Files / Code repository) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c4911f77cfdf452dbc477282d6b31991.html" target="element">
+															<span class="i18n-elementtype-AssignmentRelationship"></span>
+														(APIs - Statistical Engine (Python) ?) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-87e21f54476e48c4b831b5eff7e8f884.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(MCP Server C (Remote) - Database (remote)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e09363595f464729bd8946854ec9d158.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Remote or Local Data Sources and Tools - MCP Server B (Local)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-3b77dbf2d9b542f7a0cddbeaef6e62a5.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(MCP Client 3 - MCP Server C (Remote)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-365874adfb7b408792ae838ba6b52aba.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(APIs - MCP Server C (Remote)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f40b17809c4b40718f3a5ba42ca8ff72.html" target="element">
+															<span class="i18n-elementtype-ServingRelationship"></span>
+														(Context Resolver - Remote or Local Data Sources and Tools) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a88457d0d0e2478ebb911c4f79537107.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(MCP Client 4 - AI Agent / Stat LLM (remote)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-119e2e42a3da4a80bfd7787d2b38e90d.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Remote or Local Data Sources and Tools - APIs) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-392717d37fad46f7961844c0c64233a5.html" target="element">
+															<span class="i18n-elementtype-ServingRelationship"></span>
+														(AI Application (local) - User) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0a85320de9424cd6aa1a9eb86cec3615.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(User - Response to User Query) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8d79c2a56c334ae6bd18d92dd4715bf5.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(External Services - Statistical Engine (Python) ?) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e8dc47be3eb44924a5c18cdd97442083.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(MCP Host (local) - MCP Client 3) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-41b4d385c78f4ba0a38e21ada100489b.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(MCP Server B (Local) - Database (local)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-703e153cd83441f8b7734830c41b260b.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Cloud-based LLM - AI Agent / Stat LLM (remote)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5d81e5842a4e4fbbbe23cfdc3108e0f5.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(MCP Server C (Remote) - MCP Client 3) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d8f33caa33c349038e315d0b0a136edf.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(MCP Server B (Local) - MCP Client 2) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-12997757a1c1482082d9fa51cd440c07.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(MCP Host (local) - MCP Client 2) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b79eacf07e6e4ee8aeb9a9227aa0c66b.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Orchestration Services - Context Resolver) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b3ca62c7f93f4a48aa9d8d2fe8bd8c2b.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(MCP Host (local) - MCP Client 4) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d7c39eb589434aa6b73060ec2072f856.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(MCP Server A (Local) - MCP Client 1) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-09a213e4bf804d1aaa8fe30b0b73f612.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(MCP Host - MCP Client) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0ccc6e40076a4c809bf16cef795890d3.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(MCP Host - AI Agent) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-3f147c1b9c484e03a9c28ded823edaa1.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(AI-Actionable Statistical Data - Data Storage) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1e8d78206df944859a17495ea9aa220c.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(AI-Actionable Statistical Data - AI Agent) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0f936e7eadd04db7a3c973b893e488d5.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(AI-Actionable Statistical Data - MCP Server) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-2b3b7c5940ba418c8d318f35fc418a2d.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(AI-Actionable Statistical Data - Personal Computer) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a6e945bf0df44452a92fb0bb744405e9.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(AI-Actionable Statistical Data - MCP Host) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c93b36c2afcb43cb8e0c04060d87a92f.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(AI-Actionable Statistical Data - Data) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-82c3f4377bdf4612b859dd1b55829486.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(AI-Actionable Statistical Data - Cloud Cluster) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-39c7f8ba80604f14ac0004633dd8eb74.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(AI-Actionable Statistical Data - LLM) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6b01e19d4f484a7c9c9296fbb76d87fa.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(AI-Actionable Statistical Data - MCP Server) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f5bd35761ca941d5a619f42a512e5664.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Data Production Chain - Data Collection) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-3bc04546aa334382afdec9d5486c3c92.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Data Production Chain - Data Editing) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-dff76bdb5cf5482687b9fda4444e0966.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Data Production Chain - Data Processing ) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6d86e499c4e14c508d74fe51cebd4843.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Data Production Chain - Data Validation) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6943c0eef9fd474cb75cdb00a4e05568.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Data Production Chain - Metadata Harvesting) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6f725b7588cd4a45bf8de00c4d410ebe.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Data Production Chain - Data Classification and Tagging) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6e854633b2b7498ba9b79c594c7ef789.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(MCP Client - LLM) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-4f3ced8902c14e0b8708031f131548ac.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(LLM - MCP Client) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-73101b83e9b0442180155b36377aaff0.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(MCP Server - Resources) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a3477801268d4e51b0464fa7e26e206a.html" target="element">
+															<span class="i18n-elementtype-AssignmentRelationship"></span>
+														(MCP Server - Tool) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-9ad197cc1f8048b1baf58f604d8d3d31.html" target="element">
+															<span class="i18n-elementtype-RealizationRelationship"></span>
+														(MCP Server - Prompts) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-99fdc014ded545668868c4feb774077e.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistics Grounding Workflow - Retrieve List of Tools/Resources) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0b1f50e9ccd8492ab864d0d366f4aa0f.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistics Grounding Workflow - Retrieve List of Tools/Resources) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e92106e23dd941ac9629046f741dcbaa.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistics Grounding Workflow - Select Tool/Resource) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d6bc1ccbbe384bafa2bfb96b6b857cc9.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistics Grounding Workflow - Interpret User  Intent) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-33c1c31ff77b47cfa85be1194eda6b42.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Interpret User  Intent - Retrieve List of Tools/Resources) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-048d143d6616417b8b1106e7feb7ae5a.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Retrieve List of Tools/Resources - Retrieve List of Tools/Resources) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b4c5adf8cec743839530624c036e8562.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Retrieve List of Tools/Resources - Select Tool/Resource) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8fc67affbcc44bec9beff2aa1f46d742.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(User Asks Question - Interpret User  Intent) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6970842e8a9c431ab7a0912ec89a59ad.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistics Grounding Workflow - Map Parameters) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0defd5ad5b204854ba5d85fea83a8397.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistics Grounding Workflow - Invoke Selected Tool) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c7d674ca6bde4376936da005cf3a5789.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Select Tool/Resource - Map Parameters) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-4bcef68f29604e1b8bb1fd521515b3fc.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Map Parameters - Invoke Selected Tool) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-fe77df1e2e89485597b88a0fbe857f51.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(AI Chat Interface - User) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-cda90a7f11584fa880a5fbb44910bee6.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(User - AI Chat Interface) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-bc4f7a241f494067b9b9519279d287a2.html" target="element">
+															<span class="i18n-elementtype-AssociationRelationship"></span>
+														(Question - ) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-294d410280314b98bf034fb24a936862.html" target="element">
+															<span class="i18n-elementtype-AssociationRelationship"></span>
+														(Answer - ) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-742b7f32d1314bcea0116c39ede99905.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(API calls - Get Info from Data Source) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-ba76617df1c74bf9916aa351c10458da.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Tool - Get Info from Data Source) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-cc2a3944237c45938e0db589e7f23bd9.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(AI Chat Interface - MCP Server) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a8549e1f89f14bd295ad93a794711470.html" target="element">
+															<span class="i18n-elementtype-FlowRelationship"></span>
+														(MCP Server - AI Chat Interface) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-06474ddd4d0645c4b5f70f8c82aabc64.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistics Grounding Workflow - Get Answer) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-2d27100b433b481ebce55eaf940e3a0d.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Invoke Selected Tool - Get Answer) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-220deef35c5243ed8e2d27abde375e04.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Interpret User  Intent - Retrieve List of Tools/Resources) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-9c42033fb3204c6d93c1e898474b1122.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Data Production Chain - Data Retrieval) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-7014d3e5575b435899b85974316726d9.html" target="element">
+															<span class="i18n-elementtype-AssignmentRelationship"></span>
+														(Statistical Organization - Publisher) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5ff17241dda6434ca96ef1f8ab2c0467.html" target="element">
+															<span class="i18n-elementtype-AssignmentRelationship"></span>
+														(Publisher - Data Dissemination) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5fd5b8b2e62b4d85abe0cf2f9aa47a62.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Data Dissemination - Statistical Data) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-80845bc14a234bd5a6523d22474bc383.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Statistical Process - Statistical Data) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a7574e056102454cbf4d00d91be6be95.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Statistical Process - Data Dissemination) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-678d75c86309418e8db681457ef1b9dd.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Statistical Process - Publisher) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c1954193b627443191bf77a43fe218c7.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Statistical Process - Statistical Organization) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c2597f7a93324c3ab459582f157213e2.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Process - Data Diss) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f7de5fe895574702894235c3b37e9169.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Process - Consumer) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-59f4e66aa06b425898b66ce121a15912.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Process - Data Search) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-91c558cfcf86495293904c9768d1c92f.html" target="element">
+															<span class="i18n-elementtype-AssignmentRelationship"></span>
+														(Consumer - Data Search) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-178d2bae445a495ca4c48c66b9f522e3.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Process - Human User) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-fe55ccf37a264d34b8f860ae5cd6acef.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Process - AI User) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6b11d9450bc5417ebcd70ec1ae7549f9.html" target="element">
+															<span class="i18n-elementtype-AssignmentRelationship"></span>
+														(Human User - Consumer) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-2ca2f6411f5841e0941e421f4bf32f86.html" target="element">
+															<span class="i18n-elementtype-AssignmentRelationship"></span>
+														(AI User - Consumer) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a3d5c86846ed4ee4a199529296d82ea3.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Data Search - Statistical Data) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a57b9253b9e245228d782463aa22be44.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Knowledge Database) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-dddc71256c244d1a9ac527f590a6a915.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Prompt Library) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-7fd56844295149ab83410876673db6b8.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Control Vocabularies) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1774dfa4cba844c68758ce117af149be.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Vector Databases) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-95d3519e75b84cf6ab305c12fbe2a679.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Embedding Model) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5b0fb0ef56114dd2b2f832e60d9e9115.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Architecture - Metadata) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0b8fe3d9ae9e4767b80f3774657db2f5.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Architecture - Data Catalogue) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-2ef508a470f84aa6be6c4b4a82cda8c4.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Data Production Chain - Data Observability ) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-99a9f6aea0f34a7a8f6564aafc123e25.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Data Production Chain - Drift Detection) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5d23c38d5e4e42c3b2fcca4c6e158655.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Architecture - Data) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e97c6eb0101b428d98c75bea6fdfec14.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Architecture - Data Catalogue) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1e1841abc80a4bdd820d11771932a83f.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Metadata Enrichment and Curation - Metadata Review and Approval) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-79789ab6de124a69ab8a166091850e3a.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Centralized Data Catalog - Data Owner Interface) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-594f2d24e26048d28b5e44db465099f1.html" target="element">
+															<span class="i18n-elementtype-ServingRelationship"></span>
+														(Metadata Quality Monitiring - Review and Approve Data Catalog Entry) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5e70fba154d842b3b15c41502da27ac3.html" target="element">
+															<span class="i18n-elementtype-RealizationRelationship"></span>
+														(Centralized Data Catalog - Catalog Entry Completed ) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1491acd7e51d4032be520a7e22138bdb.html" target="element">
+															<span class="i18n-elementtype-RealizationRelationship"></span>
+														(Create Derived Datasets - Data Acquisition) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b76a281201114d20b2721da9829e2780.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Connect to Data Sources - List of Data Sources) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d5c5c92aa3184785916881e4efa240b7.html" target="element">
+															<span class="i18n-elementtype-AssignmentRelationship"></span>
+														(Data Catalog Administrator (copy) - Manage Operations and Subscriptions) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e64536a4c0d0414c8eb9e3c7e33ece78.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Business Processes - Pre-defined Classification Template) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d16a81cf5b2448c28b68cac6042578e4.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Data Acquisition - Data Source Connection) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-2bafcdcf3a2e4d06b97739ab427f0c1b.html" target="element">
+															<span class="i18n-elementtype-AssignmentRelationship"></span>
+														(Statistical Expert - Classification and Tagging) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f736fd2480d9413595f9ecd48b95896e.html" target="element">
+															<span class="i18n-elementtype-RealizationRelationship"></span>
+														(Apply Sensitivity Labels - Data Classification and Tagging) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5da8c93d31b64f6ea91d87b152a23508.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Data Source Connection - Metadata Harvesting) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0d2f9f86c95646d1a44812bcb15c05ab.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Business Processes - List of Data Sources) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f950b057e901418fb60c173989de0659.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Centralized Data Catalog - Data Catalog Entry &lt;&lt;STAT-DCAT&gt;&gt; &lt;&lt;GeoDCAT&gt;&gt; &lt;&lt;Apache Atlas&gt;&gt;) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c4844de7501346419e55b2611ed6ebe2.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Classification and Tagging - Enrich Metadata ) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6cd5a0701e67481e92946d00049c82ea.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Enrich Metadata  - Knowledge Hub Lookup) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-692e706252814e46b5b02d1a0452a372.html" target="element">
+															<span class="i18n-elementtype-AssignmentRelationship"></span>
+														(End User - Discover Data Asset) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-57723d8adbb042a09c620267edc80df7.html" target="element">
+															<span class="i18n-elementtype-RealizationRelationship"></span>
+														(Knowledge Hub - Knowledge Hub Lookup) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-aa3ee9545bf241bd9dec1511a162f2d6.html" target="element">
+															<span class="i18n-elementtype-RealizationRelationship"></span>
+														(Discover Data Asset - Data asset is securely discoverable by end users) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-9acf25351f5a43cab6d8cdb80833b186.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Applications  - Data Connectors / APIs) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-ae9ad5c30d9d434fb6dc67032478f3bd.html" target="element">
+															<span class="i18n-elementtype-ServingRelationship"></span>
+														(Confidentiality Classification Tool - Statistical Expert) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c7151c6292eb42768e7a1aff409451ce.html" target="element">
+															<span class="i18n-elementtype-RealizationRelationship"></span>
+														(Classification and Tagging - Data Classification and Tagging) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-60c3050fb3d641638a57c93e0f3ba79d.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Data Catalog Management and Configuration - Data Connectors / APIs) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-3e6b536c40b24e79b461a93d50dea786.html" target="element">
+															<span class="i18n-elementtype-ServingRelationship"></span>
+														(Data Owner Interface - Statistical Expert (copy)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b9a6dfacc01849f48a3c4992fb82c013.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Value Stream - Metadata Enrichment and Curation) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a21e259f413e4d1994558fd8274e7670.html" target="element">
+															<span class="i18n-elementtype-RealizationRelationship"></span>
+														(Curate Metadata - Metadata Enrichment and Curation) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f8976d6e79ec44bf85c0e8cb4a54c246.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Applications  - Data Catalog Management and Configuration) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-9bd7d6e03bd740519a753e8ec139ca52.html" target="element">
+															<span class="i18n-elementtype-SpecializationRelationship"></span>
+														(Business Units - End User) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6f68efce55334122aa23d2dbd1902a4d.html" target="element">
+															<span class="i18n-elementtype-ServingRelationship"></span>
+														(Data Connectors / APIs - Data Catalog Administrator) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-2ccce43795a74d70be295888cf2e1467.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Key Business Roles - Subject Matter Teams) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-7c53773693664f7680bfc9c7025367b0.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Data Cataloguing - Business Processes - Knowledge Hub Lookup) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1a56a98b18cc4aed80cbdb93baabf66f.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Metadata Review and Approval - Metadata Publishing) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-20624a66ceb9425b975a4f2bf83c4c4a.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Business Processes - Metadata Quality Monitiring) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6abeeeabacca473b90f74f462755b61f.html" target="element">
+															<span class="i18n-elementtype-SpecializationRelationship"></span>
+														(Dissemination Specialists - End User) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d396ca6b3a474cc1a3c2319a723a540e.html" target="element">
+															<span class="i18n-elementtype-RealizationRelationship"></span>
+														(Enrich Metadata  - Metadata Enrichment and Curation) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-39ec2e5a8aee4a9c8a69214d1dc849ca.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Business Processes - Technical Metadata Extraction) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-49086e4158894abdb796ad29deca54b0.html" target="element">
+															<span class="i18n-elementtype-ServingRelationship"></span>
+														(Data Catalog Management and Configuration - Data Catalog Administrator (copy)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d5af185453bc472a8bfdd36b2f8c85d2.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Business Processes - Existing Data Product Information) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-2da1d60d8e664c52ac4d5c6c5f1d2504.html" target="element">
+															<span class="i18n-elementtype-SpecializationRelationship"></span>
+														(Metadata Security Policy - Information Management Policy) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f449fd40d88e4faeb80ee3426ecad1a0.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Key Business Roles - Data Catalog Administrator) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8263277e8b994bba83fdb425f047b497.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Business Processes - Enrich Metadata ) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b85757d6f0dd47a2a0edd85bd6e6ed15.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Business Processes - Pre-defined Tags Template per Asset Type) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0ac0105502664192834098c7c70cd5b4.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Value Stream - Data Classification and Tagging) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-17463997355a4ec3ba025fd16e46659c.html" target="element">
+															<span class="i18n-elementtype-ServingRelationship"></span>
+														(End User Interface - End User) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f08feecce8cd4af586d7867aad38bfda.html" target="element">
+															<span class="i18n-elementtype-AssociationRelationship"></span>
+														(Basic Technical Metadata - Data Owner) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-67b955204992427cb215ad0c1c13b778.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Key Business Roles - Data Steward) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f21c7ed3b2874c96903f872fd312a479.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Business Processes - Review and Approve Data Catalog Entry) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-17817e95eff04e9fbd7b0d0eeb7fb02a.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Business Processes - Basic Technical Metadata) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8acd4cd286e0455db83c9027668d768b.html" target="element">
+															<span class="i18n-elementtype-AssignmentRelationship"></span>
+														(Statistical Expert - Apply Sensitivity Labels) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-680b358857be4da5950e39b5d74a0cff.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Business Processes - Catalog Entry Completed ) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-24615b5aa21f440d8b01b27a69485337.html" target="element">
+															<span class="i18n-elementtype-AssignmentRelationship"></span>
+														(Statistical Expert (copy) - Review and Approve Data Catalog Entry) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-37e0dec372914a42a19cd866afcc5fe1.html" target="element">
+															<span class="i18n-elementtype-AssignmentRelationship"></span>
+														(Data Catalog Administrator (copy) - Configure Data Sources Connections) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d5a4d565777e49a6b3960e59c671a3a9.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Applications  - Centralized Data Catalog) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5b43123ea5bd4a99a7f10023ee0e5b78.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Business Processes - Continuous Metadata Evaluation and Refinement) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-be0d02c23db74d5eb1a3edba2d13f9a6.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Business Processes - Metadata Security Policy) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0e1319a1a92a47eca73374ca3432bbb7.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Applications  - Confidentiality Classification Tool) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f38136a4927a49ae9454ec001373b47e.html" target="element">
+															<span class="i18n-elementtype-RealizationRelationship"></span>
+														(Technical Metadata Extraction - Metadata Harvesting) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1c692759ede5467287b2367fa820c965.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Classification and Tagging - Pre-defined Tags Template per Asset Type) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-97c335813e1a4c9fb9a3c5fd74c54087.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Connect to Data Sources - Technical Metadata Extraction) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-127c86057cdf430a9a1589e5aa9ca172.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Start Scheduled Data Sources Scanning - Connect to Data Sources) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-05161de67e1242ba94e7b71d9ca688b4.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Applications  - Data Catalog Entry &lt;&lt;STAT-DCAT&gt;&gt; &lt;&lt;GeoDCAT&gt;&gt; &lt;&lt;Apache Atlas&gt;&gt;) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-13360677320e41be876ac6c8d9e121fb.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Key Business Roles - Statistical Expert (copy)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-22c11e7d57aa4107bbc3480f343670e4.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Value Stream - Data Source Connection) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-da2031626fbc4207b6df173119330a7a.html" target="element">
+															<span class="i18n-elementtype-AssignmentRelationship"></span>
+														(Statistical Expert (copy) - Curate Metadata) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-479140794d3f4ec8b239e8bc9c67ee93.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Data Cataloguing - Business Processes - Connect to Data Sources) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-56f5ea8573cd4080b7774d0ffc623068.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Classification and Tagging - Pre-defined Classification Template) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d8288702729b47c3a7b64c4eeb4dd3f7.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Key Business Roles - Data Owner) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b885bd4b663c4899a950de0dee337b20.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Review and Approve Data Catalog Entry - Catalog Entry Completed ) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-18a11539a21e467fbc7c9dd16cae4a58.html" target="element">
+															<span class="i18n-elementtype-AssociationRelationship"></span>
+														(Data Owner - Key Business Roles) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-ce46290630904085871237ed23dbecc8.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Data Classification and Tagging - Metadata Enrichment and Curation) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0d258fae3aef4c75a1381b782c964d60.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Enrich Metadata  - Curate Metadata) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a641270ca3a747e5b2914506aa2381c3.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Data Cataloguing - Business Processes - Classification and Tagging) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-98c8bba8c4ca401dbebff1e509963651.html" target="element">
+															<span class="i18n-elementtype-RealizationRelationship"></span>
+														(Connect to Data Sources - Data Source Connection) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d9c00d603fbe459a941005dea88d0f1b.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Key Business Roles - Data Standards Team) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5b6ec3df1f224055975deb857545f92b.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Value Stream - Metadata Review and Approval) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-3dfcfdff4ed74213bf4baf5a1d6632ed.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Key Business Roles - Statistical Expert) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1c7ccd862f64442493404cb7e23bad61.html" target="element">
+															<span class="i18n-elementtype-RealizationRelationship"></span>
+														(Metadata Publishing - Data asset is securely discoverable by end users) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8370d7b2c9024c1ab78a107644969df4.html" target="element">
+															<span class="i18n-elementtype-AssociationRelationship"></span>
+														(Data Steward - Basic Technical Metadata) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a8298c0c6d0f46ac91b71eb23c4452df.html" target="element">
+															<span class="i18n-elementtype-ServingRelationship"></span>
+														(Continuous Metadata Evaluation and Refinement - Curate Metadata) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-10ed74b349c7475989b40adde1eebf67.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Metadata Harvesting - Data Classification and Tagging) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a092d0d69ecb47f59b252e575ef5b3cd.html" target="element">
+															<span class="i18n-elementtype-AssociationRelationship"></span>
+														(Catalog Entry Completed  - Metadata Publishing) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-644f0bfc153d48d58fac1c964718e5ca.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Technical Metadata Extraction - Basic Technical Metadata) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-dec14c23c8994277893b458f4943cb78.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Create Derived Datasets - Derived Dataset) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-3d9de9e3aed44c25a0dfd8ac14c7676a.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Curate Metadata - Review and Approve Data Catalog Entry) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-916ab6ea31a64a93808225d64c092edf.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Enrich Metadata  - Existing Data Product Information) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-823211c3ce174e588f4d4073eca99463.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Key Business Roles - Data Catalog Administrator (copy)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a655c64c2fa9470fad841fc7081ab334.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Value Stream - Metadata Harvesting) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1fdae24aba9c458e9ea60df0d3896279.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Centralized Data Catalog - End User Interface) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-2a79b9ca29e448cab4772a5ec63af36d.html" target="element">
+															<span class="i18n-elementtype-RealizationRelationship"></span>
+														(Review and Approve Data Catalog Entry - Metadata Review and Approval) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8d7311077b664073aca2dd23fcef86eb.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Technical Metadata Extraction - Apply Sensitivity Labels) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e2bd1881c29941868530372d043f7a3e.html" target="element">
+															<span class="i18n-elementtype-ServingRelationship"></span>
+														(Continuous Metadata Evaluation and Refinement - Review and Approve Data Catalog Entry) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-70892c183de74b69a62bce0f55ccd21d.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Business Processes - Start Scheduled Data Sources Scanning) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-97ad019015d041d9b212c798b94f9750.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Business Processes - Curate Metadata) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e6b21a2143b44d379cf017dd8bf93076.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Chief Data Officer - Information Management Policy) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-f86480a39a034c80876a751a64465443.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Applications  - Data Owner Interface) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1c0f3d13ca1f49f9bf010f9e2a110dda.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Business Processes - Apply Sensitivity Labels) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-823e3e8cbb114230b08fe67f200f4997.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Key Business Roles - Chief Data Officer) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-526dd13176884d5486ddbfec23552484.html" target="element">
+															<span class="i18n-elementtype-SpecializationRelationship"></span>
+														(International Organizations - End User) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-14e24fbc23f746fc989a8cb6382b4b2f.html" target="element">
+															<span class="i18n-elementtype-AssignmentRelationship"></span>
+														(Subject Matter Teams - Create Derived Datasets) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8965c834fb0b4317831f7590da20e7c7.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Connect to Data Sources - Metadata Security Policy) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6b2bcaa9694c438c971a50530b501d9a.html" target="element">
+															<span class="i18n-elementtype-AssignmentRelationship"></span>
+														(Data Catalog Administrator - Connect to Data Sources) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5df40c72ba1649ae8c94f0e58b25e826.html" target="element">
+															<span class="i18n-elementtype-TriggeringRelationship"></span>
+														(Apply Sensitivity Labels - Classification and Tagging) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-a1b932e480b4435a8ee37f46cdfc34f6.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Applications  - Knowledge Hub) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-edf709eb9ac24b669ba2e23755d8ca2c.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Cataloguing - Value Stream - Metadata Publishing) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-4827cc0512e0487ba213d7abf3c34a98.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Key Business Roles - Statistical Expert (copy)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-d55c092361f04ed0852d5796ea7a9184.html" target="element">
+															<span class="i18n-elementtype-CompositionRelationship"></span>
+														(Business Architecture - Natural Language Query (NLQ)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-9bee4654983e4ff9a7f7cc15fbe36208.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Architecture - Statistical Data and Metadata) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-926100dac991488ba4960b7fc32d1b8a.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Architecture - Semantic Metadata) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e6ef633fc7d6477a8476904da511ee79.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Knowledge Graph) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-51640a50230644cfb372cae0aa32ea4e.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Retrieval Augmented Generation (RAG)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-17db7ba8607d4923a4c62ebc338b2b1e.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - MCP Client) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-1768224388cc4344b71fc5b6b7d84958.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - MCP Server) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-fb684fff9b964415835cb6dfcbcaa5be.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Data Catalogue) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-8fe1eea046154171a28d4596c3ee4c22.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Architecture - SDMX, PX) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-4f3ca2cc7b074fa397ee040f24f1ecab.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Text-to-SQL Interfaces) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-498e4c72a91742a38001c88d6e5afab8.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Prompt Library) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-abe95743607c40269ab5becbb2dd87f9.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Application Architecture - Prompt Library) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0624e8ac373946be9741c50b8cd01f6d.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Data Architecture - Natural Language to Structured Query) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-103e688258884d22afec6fe57fe618ee.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Business Architecture - Natural Language to Structured Query) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-bcf3680f5f544120b9267407633f288d.html" target="element">
+															<span class="i18n-elementtype-AssociationRelationship"></span>
+														(Dimensions/ Keys - Data Structure Definition) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-fff49cabd2cb405ca7696fc627862299.html" target="element">
+															<span class="i18n-elementtype-AssociationRelationship"></span>
+														(Attributes/ Metadata - Data Structure Definition) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-6d422eed5ace4ed78957eeac268a3a08.html" target="element">
+															<span class="i18n-elementtype-AssociationRelationship"></span>
+														(PrimaryMeasure (the actual value) - Data Structure Definition) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-c454ee26b6964adbb6897c78128ef87a.html" target="element">
+															<span class="i18n-elementtype-AssociationRelationship"></span>
+														(CodeList - Data Structure Definition) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b4141adc41d7404db75c923684c7a5ad.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(MCP Server - Read Metadata) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b5e84faf058a4869abc8d10590cba317.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(MCP Server - MCP Tools List) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-101ce1569c16420d9687cfe282f1114a.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(MCP Server - MCP Resources List) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-3e89460a11454b4f87ec00c56e8ab15c.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Read Metadata - Dimensions/ Keys) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-554c67fdc0d24d6398864f42e6f7e719.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Read Metadata - MCP Resources List) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-4530482148744ce3b65b8aca7603e01e.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Read Metadata - MCP Tools List) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-eb704b84a2dc44ff8ffb3389a0c82f85.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(MCP Server - Schema Generation and Mapping) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-4c82724705654e0bb64992355ac4f073.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(MCP Server - MCP Server) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-ba30cb3b6b8c4836ab2442459fe76037.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(MCP Server - MCP Tools List) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-ea57090d34f545f29fb0220d26fce97f.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(MCP Server - MCP Resources List) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-ef0a4882c9b6452da35c0f892d2a8351.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Process - Statistical Data Representation Formats - SDMX, PX, PDF) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b35e27b1c08141cdb5ec6851f7e4caf9.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Process - Natural Language Query (NLQ)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b17b98ba14804d97afff3e3075fce6f4.html" target="element">
+															<span class="i18n-elementtype-AssociationRelationship"></span>
+														(Statistical Data - Statistical Data Representation Formats - SDMX, PX, PDF) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-b696b3fa9de240dcb179a0fb0a48d4d8.html" target="element">
+															<span class="i18n-elementtype-AccessRelationship"></span>
+														(Data Search - Natural Language Query (NLQ)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-e930838a72e640f08cc503d39caf8a06.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Process - Generic Statistical Information Model (GSIM)) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-5bbd8e2c4ef1442393ed22e4caec02dc.html" target="element">
+															<span class="i18n-elementtype-AggregationRelationship"></span>
+														(Statistical Process - Semantic Mapping) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-08abd1f39d314d82b7b47b6028914c4c.html" target="element">
+															<span class="i18n-elementtype-AssociationRelationship"></span>
+														(Natural Language Query (NLQ) - Semantic Mapping) 
+													</a></li>
+													<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/elements/id-0ae6f478253f495ca98ebabf96267064.html" target="element">
+															<span class="i18n-elementtype-AssociationRelationship"></span>
+														(Generic Statistical Information Model (GSIM) - Semantic Mapping) 
+													</a></li>
+
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="tree-folder "><span class="i18n-views"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+							<ul>
+											<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/views/id-9089f30b1a3743478b8feca986e12b31.html" target="view"> DataArchitectureView </a></li>
+											<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/views/id-d7f8c6e355c74cf09e5dcba47e8a20da.html" target="view"> ApplicationArchitectureView </a></li>
+											<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/views/id-8106a036e9504c54b33f81a1a267bd09.html" target="view"> TechnologyInfrastructureArchitectureView </a></li>
+											<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/views/id-1700d4245ff143c7a7af29e356340001.html" target="view"> Target System - Detailed </a></li>
+											<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/views/id-a218437e0f914d76a842d449f485e0dc.html" target="view"> Current System </a></li>
+											<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/views/id-28465774b18b4add95c71dac93384ae5.html" target="view"> BusinessArchitectureView </a></li>
+											<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/views/id-4ff3811360444a5095961df8a7f86755.html" target="view"> Target System - High Level </a></li>
+											<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/views/id-6e41fb54345f4e5c96332ad451071da5.html" target="view"> MotivationView </a></li>
+											<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/views/id-cc54199acb86449b950e73a2430625f8.html" target="view"> DataFlowView </a></li>
+											<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/views/id-21d31ba2b71245a891a713b3ae9873af.html" target="view"> Target System_AIReadySystemView </a></li>
+											<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/views/id-b9292c89197b4a608e4f917dbd3b7a80.html" target="view"> DataCatalogueBusinessProcessView </a></li>
+											<li class="tree-element "><a href="id-fe7d0d9ef140494995e8cec29159dcaa/views/id-adfb102c272c4e72bc2ad595dde6578e.html" target="view"> ApplicationUsageView </a></li>
+
+							</ul>
+						</li>
+					<!-- END OF STRINGTEMPLATE CODE -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- START ABOUT MODAL DIALOG -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">×</button>
+					<h4 class="modal-title i18n-about"></h4>
+				</div>
+				<div class="modal-body">
+					<p><strong> <span class="i18n-about-pluginname"></span></strong></p>
+					<p><span class="i18n-about-pluginversion"></span></p>
+					<p><span class="i18n-about-plugintext1"></span></p>
+					<p><span class="i18n-about-plugintext2"></span></p>
+					<p><a href="https://www.archimatetool.com" target="_blank">Archi®</a> <span class="i18n-about-plugintext3"></span></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default i18n-close" data-dismiss="modal"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END ABOUT MODAL DIALOG -->
+
+	<!-- START HINT MODAL DIALOG -->
+	<div class="modal fade first-load" id="myModalHint" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">×</button>
+						<h4 class="modal-title i18n-hint"></h4>
+				</div>
+				<div class="modal-body">
+						<iframe id="frame-hint" name="hint" onload="if($('#myModalHint').hasClass('first-load')) $('#myModalHint').removeClass('first-load'); else $('#myModalHint').modal({show:true});"></iframe>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default i18n-close" data-dismiss="modal"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END HINT MODAL DIALOG -->
+</body>
+</html>

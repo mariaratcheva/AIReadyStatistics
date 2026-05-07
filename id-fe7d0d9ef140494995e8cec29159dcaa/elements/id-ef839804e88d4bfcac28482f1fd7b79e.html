@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>SDM Repository - Source of Truth</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.4.1.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>SDM Repository - Source of Truth</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Grouping"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Grouping" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+                    <!-- Analysis -->
+                    	<li role="presentation"><a href="#analysis" aria-controls="analysis" role="tab" data-toggle="tab" class="i18n-analysis"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">1. The Mapping: SDMX DSD to MCP Tool Schema
+The most direct use case is using an SDMX Data Structure Definition (DSD) to automatically generate the JSON Schema for an MCP tool.
+
+Mechanism: An MCP server reads the SDMX DSD for a dataset (e.g., "EU Unemployment Rates").
+
+The Translation:
+
+SDMX Dimensions (Country, Frequency, Time) become the Required Parameters in the MCP tool definition.
+
+SDMX Code Lists (Allowed country codes) become Enum values in the JSON Schema.
+
+The Result: When the AI agent wants to query the data, the MCP protocol forces it to use the exact dimensions and codes defined in the SDMX standard, eliminating hallucinations of non-existent data points.
+
+2. Contextual Enrichment (Metadata as Resources)
+In MCP, "Resources" are static or dynamic data the AI can read to understand context.
+
+SDMX Metadata: You can expose SDMX Metadata Structure Definitions (MSD) as MCP Resources.
+
+Usage: Before the AI performs a calculation, it can "read" the resource to understand the methodology behind a number (e.g., "How was 'employment' defined in this 2026 dataset?"). This provides the AI with the "technical empathy" needed to explain data to a human stakeholder accurately.
+
+3. Verification &amp; Sovereignty within Gaia-X
+Since you are looking at Gaia-X compliant data spaces, the combination of SDMX and MCP acts as a "Trust Wrapper":
+
+Policy Enforcement: The MCP server can act as a Policy Enforcement Point (PEP). It checks if the AI agent has the proper Gaia-X credentials before translating a natural language request into a specific SDMX query.
+
+Immutable Audit: Because SDMX is highly structured, every "Tool Call" made via MCP can be logged with high precision. You don't just log "The AI asked for data"; you log "The AI requested OBS_VALUE for Dimension X, Y, and Z," creating a perfect audit trail for sovereign data usage.
+
+Architectural Example: The "Sovereign Statistical Agent"
+Imagine a containerized environment (like the AI compute environments you&#8217;ve explored) running an MCP Server:
+
+Discovery: The AI agent asks the MCP Server: "What statistical data is available?"
+
+The Handshake: The MCP Server sends back a list of tools based on SDMX DSDs.
+
+The Precise Query: The AI uses the get_statistical_data tool, filling in parameters like ref_area: "FR" and freq: "A" (validated by the SDMX code list).
+
+The Delivery: The MCP Server fetches the raw SDMX-ML/JSON, simplifies it for the LLM, and attaches the Attributes (like unit of measure) as context so the AI knows if the number is in "Millions" or "Thousands."
+
+The Benefit for Enterprise Architecture
+By using MCP to wrap SDMX-compliant sources, you move away from "training" models on data (which risks data leakage) and move toward federated querying. The data stays in its sovereign SDMX repository, and the AI only "sees" the specific slice of the cube it is authorized to access for that specific task.
+
+Does this alignment between the rigid structure of SDMX and the dynamic nature of MCP fit into the reference architecture you're currently modeling?
+
+Role: This is the actual phenomenon being measured (the number itself).  
+
+Common ID: In most SDMX implementations, this is identified as OBS_VALUE.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="used-in-views-id-adfb102c272c4e72bc2ad595dde6578e">
+																	<td><a href="../views/id-adfb102c272c4e72bc2ad595dde6578e.html" target="view" title="ApplicationUsageView"> ApplicationUsageView </a></td>
+																	<td><span class="i18n-viewpoint-application_usage" /></td>
+																</tr><tr id="used-in-views-id-9089f30b1a3743478b8feca986e12b31">
+																	<td><a href="../views/id-9089f30b1a3743478b8feca986e12b31.html" target="view" title="DataArchitectureView"> DataArchitectureView </a></td>
+																	<td><span class="i18n-viewpoint-information_structure" /></td>
+																</tr>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+									<tr>
+											<td><a href="../elements/id-1323080626824656aee38ce950635d11.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-ef839804e88d4bfcac28482f1fd7b79e.html" target="element"> SDM Repository - Source of Truth</a></td>
+											<td><a href="../elements/id-78da5ae92d6448aca00d151036aa8413.html" target="element"> Statistical Artefact</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-1049162e591045c98a74a869efb13ba7.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-ef839804e88d4bfcac28482f1fd7b79e.html" target="element"> SDM Repository - Source of Truth</a></td>
+											<td><a href="../elements/id-fa26d193821e4a1e8e79a6ff0b2b9fbe.html" target="element"> Data Structure Definition</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-d0b8d17ea1f84bccb17052cfd62d83ab.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-ef839804e88d4bfcac28482f1fd7b79e.html" target="element"> SDM Repository - Source of Truth</a></td>
+											<td><a href="../elements/id-e8d46a29694f4fdcb3d6d18e800ce778.html" target="element"> Data Flow Definition</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-38152005d7744d1d98371c17a0fdd446.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-ef839804e88d4bfcac28482f1fd7b79e.html" target="element"> SDM Repository - Source of Truth</a></td>
+											<td><a href="../elements/id-92ad0731c34b4aad8617ad9d58523b93.html" target="element"> Dimensions/ Keys</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-940ecbc359744bcebb717ed9bd78519a.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-ef839804e88d4bfcac28482f1fd7b79e.html" target="element"> SDM Repository - Source of Truth</a></td>
+											<td><a href="../elements/id-0216473d955c4d3c87c1634fea4bcff9.html" target="element"> Attributes/ Metadata</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-bc7af1fe83834421b26f2ad3ec7679ee.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-ef839804e88d4bfcac28482f1fd7b79e.html" target="element"> SDM Repository - Source of Truth</a></td>
+											<td><a href="../elements/id-ed22c1352c2f4fe3964009e7e36e354d.html" target="element"> PrimaryMeasure (the actual value)</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-e34b2e1efdd146b48fc57a298c40e420.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-ef839804e88d4bfcac28482f1fd7b79e.html" target="element"> SDM Repository - Source of Truth</a></td>
+											<td><a href="../elements/id-95b7168ec12749e2a9f5714f49138d66.html" target="element"> CodeList</a></td>
+										</tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
