@@ -47,13 +47,17 @@
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
 						<div class="convertlinks documentation" style="white-space:pre-wrap">LLM:
-- interprets user intent
-- selects MCP tool
-- maps parameters
+1. interprets user intent 
+	using known statistical concepts 
+3. selects MCP tool to answer the user question
+4. maps parameters 
 
 MCP Client:
-- retrieves a list of data and tools available
-- invokes selected tool</div>
+2. retrieves a list of data and tools available
+5. invokes selected tool 
+
+LLM: 
+6. compose a response using ONLY the API response data. </div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">

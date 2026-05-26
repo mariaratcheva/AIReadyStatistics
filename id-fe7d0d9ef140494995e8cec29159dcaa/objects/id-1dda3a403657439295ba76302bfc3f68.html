@@ -46,7 +46,18 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">GET /gdp?name = canada</div>
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Outbound HTTP REST request:
+-GET /gdp?name = canada
+
+JSON:
+{
+  "jsonrpc": "2.0",
+  "id": "mcp-req-102",
+  "method": "resources/read",
+  "params": {
+    "uri": "stats://uk/ons/cpi/2026/q1"
+  }
+}</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
