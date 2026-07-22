@@ -48,7 +48,18 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+						<div class="convertlinks documentation" style="white-space:pre-wrap">&#8226;	Compute Clusters &#8211; raw processing - run MCP servers, Web Servers, LLM models, Applications &amp; Agents Execution
+&#8226;	Platform Services &#8211; managed runtimes for hosting and performance
+&#8226;	Security Controls - perimeter controls, web firewalls, bot management
+&#8226;	Storage &amp; Caching - high-speed data retrieval, caching, and static asset storage
+&#8226;	Trust &amp; Crypto Keys- managing encryption keys, payload signatures, and agent authentication.
+&#8226;	Observability - tracking system health, crawler behavior, and API usage
+&#8226;	Asynchronous Queue / Event Streaming Infrastructure - high-throughput message brokers
+&#8226;	Auto-Discovery &amp; Manifest hosting - endpoint directories listing available tools, schemas, authentication requirements, and capabilities for discovering agents.
+&#8226;	AI Gateway: Manages traffic between your application and the LLM (tracks token usage, cost optimization, prompt-injection defense).
+&#8226;	MCP Gateway: Governs the agent's intent when it decides to act (verifies if the agent is allowed to invoke a specific tool, tracks session state, handles human approvals).
+&#8226;	API Gateway: Protects the actual underlying enterprise microservice when the tool executes (handles transport authentication, infrastructure rate limits, and network perimeter protection)
+</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
@@ -101,17 +112,47 @@
 											<td><a href="../elements/id-1c70954f025b4259b21eae2cb8aca4d2.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
 											<td><a href="../elements/id-2efa8cf361664bcda3c3d8d7dc9c0cbb.html" target="element"> Technology Architecture Layer</a></td>
-											<td><a href="../elements/id-17c262c58b804a2ca41e36eb87b0bffc.html" target="element"> MCP Server</a></td>
+											<td><a href="../elements/id-17c262c58b804a2ca41e36eb87b0bffc.html" target="element"> Compute Clusters</a></td>
 										</tr><tr>
 											<td><a href="../elements/id-66959871ce054658880c5e3832b59855.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
 											<td><a href="../elements/id-2efa8cf361664bcda3c3d8d7dc9c0cbb.html" target="element"> Technology Architecture Layer</a></td>
-											<td><a href="../elements/id-bf37442fb628421b96c3b77469e0e2a8.html" target="element"> Data Storage</a></td>
+											<td><a href="../elements/id-bf37442fb628421b96c3b77469e0e2a8.html" target="element"> Data Storage &amp; Caching</a></td>
 										</tr><tr>
 											<td><a href="../elements/id-f15543cb58dc474ca65f083aaf3770ac.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
 											<td><a href="../elements/id-2efa8cf361664bcda3c3d8d7dc9c0cbb.html" target="element"> Technology Architecture Layer</a></td>
-											<td><a href="../elements/id-30c773a29a214458a2b6ddbf2e61b7cf.html" target="element"> API Gateway</a></td>
+											<td><a href="../elements/id-30c773a29a214458a2b6ddbf2e61b7cf.html" target="element"> API/AI/MCP Gateway</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-0ba2afaac15b4a76a0007cad38790cb9.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-2efa8cf361664bcda3c3d8d7dc9c0cbb.html" target="element"> Technology Architecture Layer</a></td>
+											<td><a href="../elements/id-e7b1cd44a84d4efbbcae1be9687ef99d.html" target="element"> Platform Services</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-9cd67a7e5e474d51a2d3c9ce184a9e31.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-2efa8cf361664bcda3c3d8d7dc9c0cbb.html" target="element"> Technology Architecture Layer</a></td>
+											<td><a href="../elements/id-b5196c512c8a41d39c509ddfa3f222f2.html" target="element"> AI/MCP Gateway</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-f136aa424dd04c6fbbb66d4b7016c384.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-2efa8cf361664bcda3c3d8d7dc9c0cbb.html" target="element"> Technology Architecture Layer</a></td>
+											<td><a href="../elements/id-664e613747884b62a2e23c6fb3648d59.html" target="element"> Trust and Crypto Keys</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-5baf45246ee141af818a91547607a1de.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-2efa8cf361664bcda3c3d8d7dc9c0cbb.html" target="element"> Technology Architecture Layer</a></td>
+											<td><a href="../elements/id-6fd1a5b38f8e4caea41c646294550627.html" target="element"> Observability </a></td>
+										</tr><tr>
+											<td><a href="../elements/id-2e5bff42d9c64b5297c7627495858065.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-2efa8cf361664bcda3c3d8d7dc9c0cbb.html" target="element"> Technology Architecture Layer</a></td>
+											<td><a href="../elements/id-7efca3063ee74aa286c3054d9a5b03a7.html" target="element"> Auto-Discovery &amp; Manifest hosting</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-4c9b71837688421e9d925ce49ae0ff9b.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-2efa8cf361664bcda3c3d8d7dc9c0cbb.html" target="element"> Technology Architecture Layer</a></td>
+											<td><a href="../elements/id-cbd0c114bddb432abe113e13cc4bce10.html" target="element"> Asynchronous Queue / Event Streaming</a></td>
 										</tr>
 							</tbody>
 						</table>
