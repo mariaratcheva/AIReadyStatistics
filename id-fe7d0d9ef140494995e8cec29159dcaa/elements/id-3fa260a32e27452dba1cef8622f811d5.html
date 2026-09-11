@@ -48,7 +48,47 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+						<div class="convertlinks documentation" style="white-space:pre-wrap">
+
+Connection Routing: Provides the base URI, port, service account token reference, or connection pool ID.
+
+Fallback Strategy: Specifies secondary routes (e.g., if the real-time API times out, fall back to the analytical data warehouse replica).
+
+2. Native Query / Dialect Payload
+Translates the semantic layer's Intermediate Representation (IR) into native instructions for the target engine:
+
+For Data Warehouses (SQL): Generates target-specific SQL (e.g., Snowflake dialect vs. BigQuery dialect) including joins, aggregations, and row/column security predicates.
+
+For Vector Databases: Provides the query vector embedding, distance metric (e.g., cosine similarity), top-k count, and metadata filter payload.
+
+For Statistical Endpoints (SDMX/REST): Formats the URI path, header parameters, and REST dimensions according to statistical data structure definitions (DSDs).
+
+3. Security &amp; Governance Rules (Injected Predicates)
+Carries non-bypassable security directives enforced during query execution:
+
+Row-Level Filtering: Mandatory WHERE clauses injected based on user entitlements (e.g., WHERE region = 'CA').
+
+Column Masking / Redaction: Instructions to hashing/redacting sensitive fields at the storage level.
+
+Data Lineage Headers: Attaches audit metadata to trace the origin of every retrieved record.
+
+4. Post-Processing &amp; Response Contract
+Specifies how the raw payload returned by the target engine must be transformed before reaching the client:
+
+Format Standardization: Converts raw database result sets into canonical JSON, SDMX-JSON, or JSON-LD.
+
+Zero-Hallucination Guardrails: Forces strict binding between raw numerical values and their authoritative metadata/methodology notes.
+
+Semantic Annotation: Appends URI references from the semantic layer's ontology so downstream AI agents or BI tools can interpret field definitions correctly.
+
+Execution Lifecycle of a Routing Instruction
+Generation: The Routing Engine constructs the instruction set after evaluating the user's intent, domain rules, and security context.
+
+Dispatch: The instruction is dispatched to an Execution Connector / Adapter specific to the target system.
+
+Execution: The adapter executes the native spec against the target system (e.g., issuing an SDMX REST call or executing a SQL query).
+
+Validation: The returned payload is validated against the Response Contract specified in the instruction to guarantee correctness and compliance before serving the response.</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
@@ -72,7 +112,10 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr id="used-in-views-id-a94d89709c8e4f2b988c96eb461ac512">
+								<tr id="used-in-views-id-5d82f271d1c949fbb74b62305004a503">
+																	<td><a href="../views/id-5d82f271d1c949fbb74b62305004a503.html" target="view" title="Semantic Layer - Routing Instructions"> Semantic Layer - Routing Instructions </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-a94d89709c8e4f2b988c96eb461ac512">
 																	<td><a href="../views/id-a94d89709c8e4f2b988c96eb461ac512.html" target="view" title="Semantic Layer - Federated"> Semantic Layer - Federated </a></td>
 																	<td><span class="i18n-viewpoint-" /></td>
 																</tr>
@@ -108,6 +151,11 @@
 											<td><a href="../elements/id-3bbd3dd2bad54f87839a8ec492987121.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-AccessRelationship" /></td>
 											<td><a href="../elements/id-2fe5b17f81f0471cb5e42f553a95a370.html" target="element"> AI Assistant (LLM)</a></td>
+											<td><a href="../elements/id-3fa260a32e27452dba1cef8622f811d5.html" target="element"> Routing Instructions</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-1ceb89e0a1094c34b4408c68599d2b37.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-00280895be194971b53cc145d5c6b793.html" target="element"> Metadata / Trace / Lineage</a></td>
 											<td><a href="../elements/id-3fa260a32e27452dba1cef8622f811d5.html" target="element"> Routing Instructions</a></td>
 										</tr>
 							</tbody>
